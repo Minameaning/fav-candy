@@ -20,8 +20,7 @@ body {
     font-family: 'Poppins', sans-serif;
 
 }
-
-
+/*logo of the website*/
 .reese-logo {
     width: 10%;
     height: auto;
@@ -29,6 +28,7 @@ body {
 
 }
 
+/*navigation bar*/
 .nav {
     width: 100%;
     background-color: var(--darkbrown);
@@ -165,7 +165,6 @@ body {
     position: relative;
     float: left;
     max-width: 100%;
-    /* left: 10%; */
     margin: 10px;
     padding: 1%;
     padding-left: 15%;
@@ -208,7 +207,7 @@ body {
 
     }
 }
-
+/*product history section*/
 .product-info {
     width: 100%;
     font-size: 1.2em;
@@ -271,7 +270,7 @@ div.transbox {
     transform: scale(1.1);
 }
 
-
+/*recipe from reese's */
 .recipe-container {
     background: #FF6511;
     background: linear-gradient(357deg, rgba(237, 93, 31, 0.5) 24%, rgba(252, 207, 32, 1)80%), url(https://allcitycandy.com/cdn/shop/products/Screenshot2022-05-03121457_2048x.jpg?v=1651854655) center;
@@ -524,6 +523,8 @@ button a{
     color: var(--darkbrown);
 }
 
+
+/*when screen is smaller will change the size*/
 @media (max-width: 520px) {
 
 
