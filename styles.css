@@ -165,9 +165,10 @@ body {
     position: relative;
     float: left;
     max-width: 100%;
-    left: 10%;
+    /* left: 10%; */
     margin: 10px;
     padding: 1%;
+    padding-left: 15%;
     transform: rotate(-20deg);
     animation: wiggle 2s linear infinite;
     filter: drop-shadow(0 0 0.75rem #47250A);
@@ -523,8 +524,7 @@ button a{
     color: var(--darkbrown);
 }
 
-
-@media (max-width: 510px) {
+@media (max-width: 520px) {
 
 
     .nav>.nav-btn {
@@ -585,12 +585,16 @@ button a{
         top: 20%;
 
     }
-
+    .reese-slogan,.reese-slogan2{
+        font-size: 6em;
+    }
     .reese-title-box,
     .reese-image {
         display: grid;
     }
-
+    .reese-cup{
+        width: 70%;
+    }
     .footer-distributed {
         font: bold 14px sans-serif;
     }
