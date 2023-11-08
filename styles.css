@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-shadow: -1px 1px 0 #47250A,
+        1px 1px 0 #47250A,
+        1px -1px 0 #47250A,
+        -1px -1px 0 #47250A;
+    ;
+    --darkbrown: #47250A;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.reese-logo {
+    width: 10%;
+    height: auto;
+    transform: rotate(-5deg);
+
+}
+
+.nav {
+    width: 100%;
+    background-color: var(--darkbrown);
+    display: flex;
+    align-items: center;
+
+}
+
+.nav>.nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+}
+
+.nav>.nav-header>.nav-title {
+    font-size: 22px;
+    color: #fff;
+}
+
+.nav>.nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav>.nav-list>li {
+    list-style-type: none;
+
+}
+
+.nav>.nav-list>li a {
+    text-decoration: none;
+    color: rgb(243, 255, 232);
+    font-size: 1.7em;
+    cursor: pointer;
+
+}
+
+.nav>.nav-list>li :hover {
+    color: #F39925;
+    padding: 5%;
+
+
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+/* main section */
+.hero-container {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 101, 17, 1) 0%, rgba(243, 153, 37, 1) 100%);
+}
+
+.title-container {
+    display: grid;
+    max-width: 100%;
+}
+
+.reese-title-box {
+    border-radius: 50%;
+    background: var(--darkbrown);
+    max-width: 100%;
+    transform: rotate(-10deg);
+    padding: 3%;
+    left: 5%;
+    top: 45px;
+    position: relative;
+    float: left;
+    box-shadow: 0px 10px #FF6511;
+    filter: drop-shadow(0 0 0.75rem #47250A);
+}
+
+.reese-title {
+    position: relative;
+    font-family: 'Francois One', sans-serif;
+    font-size: 9em;
+    color: #FCCF20;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+
+}
+
+.reese-title::first-letter {
+    font-size: 1.5em;
+}
+
+.reese-subtitle {
+    position: inherit;
+    font-size: 30px;
+    color: #F39925;
+    text-align: center;
+}
+
+.reese-slogan {
+    position: relative;
+    font-size: 7em;
+    color: #f7f7f7;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    animation: slideshow 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+@keyframes slideshow {
+    0% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.reese-slogan2 {
+    position: relative;
+    font-size: 9em;
+    text-align: center;
+    color: #e6e6e6;
+    text-shadow: var(--text-shadow);
+    animation: slideshow 2s cubic-bezier(0.77, 0, 0.175, 1) 0.6s;
+}
+
+.reese-slogan2:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: #FF6511;
+}
+
+.reese-image {
+
+    padding: 1%;
+}
+
+.reese-cup {
+    position: relative;
+    float: left;
+    max-width: 100%;
+    left: 10%;
+    margin: 10px;
+    padding: 1%;
+    transform: rotate(-20deg);
+    animation: wiggle 2s linear infinite;
+    filter: drop-shadow(0 0 0.75rem #47250A);
+
+}
+
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(10deg);
+
+    }
+}
+
+.product-info {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.productinfo {
+    padding: 50px;
+    background: linear-gradient(180deg, rgba(243, 153, 37, 1) 0%, rgba(252, 207, 32, 1) 100%);
+}
+
+div.transbox {
+    margin: 0;
+    padding: 2%;
+    border-radius: 5px;
+    background: whitesmoke;
+    filter: drop-shadow(0 0 0.75rem #47250A);
+
+}
+
+.product-info  h2 {
+    font-size: 2.5em;
+    position: relative;
+    text-align: center;
+    padding: 1%;
+    color: var(--darkbrown);
+}
+
+.product-info p {
+    padding: 1%;
+    margin: 10px;
+    position: relative;
+    margin: 2%;
+    text-align: left;
+    left: 3%;
+    color: var(--darkbrown);
+}
+
+.reese-history-link {
+    text-decoration: none;
+    color: #F39925;
+}
+
+.reese-history-link:hover {
+    color: #FF6511;
+    text-decoration: underline;
+}
+
+.reese-package {
+    position: relative;
+    float: right;
+    margin: 10px;
+    padding: 5%;
+    width: 40%;
+    height: auto;
+    transform: rotate(5deg);
+    filter: drop-shadow(0 0 0.75rem #47250A);
+}
+
+.reese-package:hover {
+    transform: scale(1.1);
+}
+
+
+.recipe-container {
+    background: #FF6511;
+    background: linear-gradient(357deg, rgba(237, 93, 31, 0.5) 24%, rgba(252, 207, 32, 1)80%), url(https://allcitycandy.com/cdn/shop/products/Screenshot2022-05-03121457_2048x.jpg?v=1651854655) center;
+}
+
+.reese-recipe {
+    font-size: 3.5em;
+    color: var(--darkbrown);
+    text-align: center;
+
+}
+
+.reese-recipe::first-letter,
+.reese-history::first-letter ,.reese-ingredient-title::first-letter{
+    font-family: 'Francois One', sans-serif;
+    font-size: 2em;
+    color: #FF6511;
+    text-shadow: var(--text-shadow);
+}
+
+.cards-list {
+    position: relative;
+    padding-bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px auto;
+    padding: 2%;
+    width: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card .card_image img {
+    width: 290px;
+    height: 300px;
+    border-radius: 40px;
+    object-fit: cover;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-size: 30px;
+    margin-top: 9%;
+    height: 40px;
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.card_title p {
+    color: #e6e6e6;
+    font-weight: bold;
+    text-shadow: var(--text-shadow);
+
+}
+
+
+/* footer */
+.reese-logo-footer {
+
+    width: 20%;
+    height: auto;
+    transform: rotate(-5deg);
+}
+
+.footer-distributed {
+
+    background-color: var(--darkbrown);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 20px 25px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #FCCF20;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #e6e6e6;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+    color: #F39925;
+}
+
+.footer-distributed .footer-center i {
+    color: rgba(255, 101, 17, 1);
+    font-size: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 5%;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #F39925;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-size: 20px;
+    left: 0;
+    color: #e6e6e6;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+    color: #F39925;
+}
+
+.footer-distributed input[type=text], input[type=email]{
+    color: #47250A;
+    font-size: 15px;
+    border-radius: 5px;
+width: 100%;
+}
+button{
+    color: #47250A;
+    font-size: 1em;
+    padding: 5px;
+    background-color: #FF6511;
+    border-radius: 10px;
+    border-style: none;
+
+}
+button:hover{
+    background-color:#F39925;
+    color:var(--darkbrown);
+    padding: 10px;
+}
+button a{
+    text-decoration: none;
+    color: var(--darkbrown);
+}
+
+
+@media (max-width: 510px) {
+
+
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 0.2rem;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background-color: var(--darkbrown);
+        height: 0;
+        transition: all 0.3s ease-in;
+        top: 40px;
+        left: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .nav>.nav-list>li {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .nav>#nav-check:checked~.nav-list {
+        height: calc(100vh - 50px);
+    }
+
+    .reese-title {
+        font-size: 3em;
+        transform: rotate(0);
+        top: 10%;
+    }
+
+    .reese-subtitle {
+        font-size: 1em;
+        transform: rotate(0);
+        top: 20%;
+
+    }
+
+    .reese-title-box,
+    .reese-image {
+        display: grid;
+    }
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
